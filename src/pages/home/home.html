@@ -1,18 +1,60 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>START</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content>
+	<h4 padding>Welcome to Ionic2 Missing Components!</h4>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+	<ion-list no-border>
+		<button ion-item (click)="openSmartImagePage()">
+			<ion-icon name='albums' item-left></ion-icon>
+			Smart Image
+			<ion-note item-right>img enhancment</ion-note>
+		</button>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+		<button ion-item (click)="openLazyImagePage()">
+			<ion-icon name='body' item-left></ion-icon>
+			Lazy Image
+			<ion-note item-right>img enhancment</ion-note>
+		</button>
+
+		<button ion-item (click)="openHideableBarPage()">
+			<ion-icon name='leaf' item-left></ion-icon>
+			Hide Bars On Scroll
+			<ion-note item-right>ue enhancment</ion-note>
+		</button>
+
+		<button ion-item (click)="openPickerPage()">
+			<ion-icon name='flask' item-left></ion-icon>
+			Picker Modal
+			<ion-note item-right>UI component</ion-note>
+		</button>
+
+		<button ion-item (click)="openAccordionPage()">
+			<ion-icon name='flask' item-left></ion-icon>
+			Accordion
+			<ion-note item-right>UI component</ion-note>
+		</button>
+
+		<button ion-item (click)="openTopIconButtonPage()">
+			<ion-icon name='flask' item-left></ion-icon>
+			TopIconButton
+			<ion-note item-right>UI component</ion-note>
+		</button>
+
+		<button ion-item (click)="openSelectableFabtnPage()">
+			<ion-icon name='flask' item-left></ion-icon>
+			SelectableFabtn
+			<ion-note item-right>UI component</ion-note>
+		</button>
+
+
+
+	</ion-list>
+
 </ion-content>

@@ -1,0 +1,41 @@
+<!--
+  demo page for smt-img and smartimagedetector
+  do not need any coding in page component
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Lazy image Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- add smartimagedetector directive in ion-content -->
+<ion-content class="card-background-page" smartimagedetector>
+  <ion-card>
+    <smt-img src="{{wp[0]}}" lazy></smt-img>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <smt-img src="{{wp[1]}}" lazy></smt-img>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <smt-img src="{{wp[2]}}" lazy></smt-img>
+    <div class="card-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <smt-img src="{{wp[3]}}" lazy></smt-img>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <smt-img src="{{wp[4]}}" lazy></smt-img>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+</ion-content>

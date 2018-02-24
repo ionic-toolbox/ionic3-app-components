@@ -23,7 +23,6 @@ export class SelectableFab {
 
   }
 
-  // create uid here is a must! @2016/11/23
   ngOnInit():void{
     this._uid = Math.random();
 

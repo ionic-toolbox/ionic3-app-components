@@ -1,0 +1,20 @@
+.picker-toolbar {
+    display: flex;
+    height: 44px;
+    border-bottom: .55px solid #c8c7cc;
+    background: #fff;
+}
+
+.picker-toolbar-button {
+    flex: 1;
+    text-align: right;
+}
+
+.picker-toolbar-cancel {
+    text-align: left;
+}
+
+.picker-wrapper {
+    min-height: 200px;
+    background-color: #FFFFFF;
+}
