@@ -1,0 +1,233 @@
+smt-img {
+  display: block;
+  min-width: 100px;
+  height: auto;
+}
+
+// 表格中的列内容居中
+ion-row[center] ion-col {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  // 水平居中
+  justify-content: center;
+  -webkit-box-pack:center;
+}
+
+ion-col[left] {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  justify-content: flex-start;
+  // -webkit-box-pack:start;
+}
+ion-col[right] {
+  /* Safari, Chrome, and Opera */
+  display:-webkit-box;
+  justify-content: flex-end;
+  -webkit-box-pack:end;
+}
+
+ion-col[center] {
+  display:-webkit-box;
+  justify-content: center;
+  // important!
+  -webkit-box-pack:center;
+}
+
+ion-col[right].center {
+  display: flex;
+  align-items: center;
+}
+
+
+[no-roundcorner] {
+  border-radius: 0;
+}
+
+[flex-box] {
+  // flexbox
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+[flex-v-center] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // 垂直居中
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+[flex-v-center-right] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // 垂直居中
+  -webkit-box-align: center;
+  align-items: center;
+  // right aign
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+}
+
+[flex-v-bottom]{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // works!
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+}
+
+[flex-v-bottom-left] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.flex-v-bottom-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+[flex-v-bottom-center] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+  // horizontal
+  justify-content: center;
+  -webkit-box-pack:center;
+}
+
+.flex-v-bottom-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+  // horizontal
+  justify-content: center;
+  -webkit-box-pack:center;
+}
+
+[flex-v-bottom-right] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+  // horizontal
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+}
+
+.flex-v-bottom-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  // vertical
+  -webkit-box-align: end;
+  align-items: flex-end;
+  // horizontal
+  justify-content: flex-end;;
+  -webkit-box-pack: end;
+}
+
+
+.flex-h-center {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  // 水平居中
+  justify-content: center;
+  -webkit-box-pack:center;
+}
+
+[flex-h-center] {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+
+  justify-content: center;
+  // 水平居中
+  -webkit-box-pack:center;
+}
+
+.flex-h-right {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+}
+
+[flex-h-right] {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+}
+
+.flex-hv-center {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  // 水平方向
+  justify-content: center;
+  -webkit-box-pack: center;
+  // 垂直方向
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+[flex-hv-center] {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  // 水平方向
+  justify-content: center;
+  -webkit-box-pack: center;
+  // 垂直方向
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+[small] {
+  font-size: 12px;
+}
+
+[wrap] {
+  white-space: normal;
+}
