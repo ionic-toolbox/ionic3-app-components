@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    templateUrl: 'template.html'
+	templateUrl: 'page.html'
 })
-export class BasicPage { }
+export class GridsPage { }

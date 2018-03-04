@@ -7,9 +7,10 @@
 		<ion-title>Buttons</ion-title>
 	</ion-navbar>
 </ion-header>
-<ion-content padding>
+
+<ion-content padding class="page-buttons">
 	<ion-grid>
-		<ion-row> <!-- Default -->
+		<ion-row> 	<!-- Default -->
 			<ion-col col-2>
 				<h4>Default</h4>
 			</ion-col>
@@ -21,7 +22,7 @@
 				<button ion-button color="dark" (click)="itemTapped($event)">Dark</button>
 			</ion-col>
 		</ion-row>
-		<ion-row> <!-- Clear -->
+		<ion-row>	<!-- Clear -->
 			<ion-col col-2>
 				<h4>Clear</h4>
 			</ion-col>
@@ -33,8 +34,7 @@
 				<button ion-button color="dark" clear>Dark</button>
 			</ion-col>
 		</ion-row>
-
-		<ion-row> <!-- Outline -->
+		<ion-row>	<!-- Outline -->
 			<ion-col col-2>
 				<h4>Outline</h4>
 			</ion-col>
@@ -46,7 +46,7 @@
 				<button ion-button color="dark" outline>Dark</button>
 			</ion-col>
 		</ion-row>
-		<ion-row> <!-- Round -->
+		<ion-row>	<!-- Round -->
 			<ion-col col-2>
 				<h4>Round</h4>
 			</ion-col>
@@ -58,7 +58,7 @@
 				<button ion-button color="dark" round>Dark</button>
 			</ion-col>
 		</ion-row>
-		<ion-row> <!-- Sizes -->
+		<ion-row>	<!-- Sizes -->
 			<ion-col col-2>
 				<h4>Sizes</h4>
 			</ion-col>
@@ -70,13 +70,71 @@
 				<button ion-button color="dark" large>Dark Large</button>
 			</ion-col>
 		</ion-row>
-		<ion-row> <!-- Block -->
+		<ion-row>	<!-- Icons -->
+			<ion-col col-2>
+				<h3>Icons</h3>
+			</ion-col>
+			<ion-col col-2><h4>Color</h4></ion-col>
+			<ion-col><h4>Demo Buttons</h4>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-2>light</ion-col>
+			<ion-col><button ion-button color="light" icon-only>			<ion-icon name='home'>								</ion-icon>			</button>	</ion-col>
+			<ion-col><button ion-button color="light" icon-start>			<ion-icon name='arrow-back'>						</ion-icon>Back		</button>	</ion-col>
+			<ion-col><button ion-button color="light">						<ion-icon name='arrow-down'>						</ion-icon>Down		</button>	</ion-col>
+			<ion-col><button ion-button color="light">						<ion-icon name='arrow-up'>							</ion-icon>Up		</button>	</ion-col>
+			<ion-col><button ion-button color="light" icon-end>				<ion-icon name='arrow-forward'>						</ion-icon>Forward	</button>	</ion-col>
+		</ion-row>		
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-2>-</ion-col>
+			<ion-col><button ion-button icon-only>							<ion-icon name='home'>								</ion-icon>			</button>	</ion-col>
+			<ion-col><button ion-button icon-start>							<ion-icon name='home'>								</ion-icon>Default	</button>	</ion-col>
+			<ion-col><button ion-button outline icon-start>					<ion-icon name='briefcase' is-active="false">		</ion-icon>Outline	</button>	</ion-col>
+			<ion-col><button ion-button clear icon-start>					<ion-icon name='beer' is-active="false">			</ion-icon>Clear	</button>	</ion-col>
+			<ion-col></ion-col>
+			<ion-col></ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-2>secondary</ion-col>
+			<ion-col><button ion-button color="secondary" icon-only>		<ion-icon name='home'>								</ion-icon>			</button>	</ion-col>
+			<ion-col><button ion-button color="secondary" icon-start>		<ion-icon name='people'>							</ion-icon>Default	</button>	</ion-col>
+			<ion-col><button ion-button color="secondary" outline icon-start><ion-icon name='paw' is-active="false">			</ion-icon>Outline	</button>	</ion-col>
+			<ion-col></ion-col>
+			<ion-col></ion-col>
+			<ion-col></ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-2>danger</ion-col>
+			<ion-col><button ion-button color="danger" icon-only>			<ion-icon name='home'>								</ion-icon></button>			</ion-col>
+			<ion-col><button ion-button color="danger" icon-start>			<ion-icon name='close'>								</ion-icon>Default</button>		</ion-col>
+			<ion-col><button ion-button color="danger" round icon-only>		<ion-icon name='remove-circle' is-active="false">	</ion-icon>Round</button>		</ion-col>
+			<ion-col><button ion-button color="danger" outline icon-only>	<ion-icon name='remove-circle' is-active="false">	</ion-icon>Outline</button>		</ion-col>
+			<ion-col><button ion-button color="danger" clear icon-only>		<ion-icon name='trash' is-active="false">			</ion-icon>Clear</button>		</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-2>dark</ion-col>
+			<ion-col><button ion-button color="dark" icon-only>				<ion-icon name='home' is-active="false">		</ion-icon></button></ion-col>
+			<ion-col><button ion-button color="dark" icon-start>			<ion-icon name='construct' is-active="false">		</ion-icon>Default </button></ion-col>
+			<ion-col><button ion-button color="dark" round icon-start>		<ion-icon name='construct' is-active="false">		</ion-icon>Round </button></ion-col>
+			<ion-col><button ion-button color="dark" outline icon-only>		<ion-icon name='construct' is-active="false">		</ion-icon>Outline</button></ion-col>
+			<ion-col><button ion-button color="dark" clear icon-only>		<ion-icon name='construct' is-active="false">		</ion-icon>Clear</button></ion-col>
+		</ion-row>
+
+		<ion-row>
+			<!-- Block -->
 			<ion-col col-2>
 				<h4>Block</h4>
 			</ion-col>
 			<ion-col>
 				<p>Adding block to a button will make the button take 100% of its parent’s width. It will also add display: block to the
-					button</p>
+					button
+				</p>
 				<button ion-button color="light" block>Light</button>
 				<button ion-button block>Default</button>
 				<button ion-button color="secondary" block>Secondary</button>
@@ -85,6 +143,7 @@
 			</ion-col>
 		</ion-row>
 		<ion-row>
+			<!-- Full -->
 			<ion-col col-2>
 				<h4>Full</h4>
 			</ion-col>
@@ -99,7 +158,6 @@
 			</ion-col>
 		</ion-row>
 	</ion-grid>
-
 
 	<h3>Components</h3>
 	<div class="buttons-page">
@@ -129,61 +187,5 @@
 			</ion-item>
 		</ion-list>
 	</div>
-
-	<h3>Icons</h3>
-	<button ion-button color="light" icon-start>
-		<ion-icon name='arrow-back'></ion-icon>
-		Back
-	</button>
-
-	<button ion-button color="light" icon-only>
-		<ion-icon name='arrow-down'></ion-icon>
-	</button>
-
-	<button ion-button color="light" icon-only>
-		<ion-icon name='arrow-up'></ion-icon>
-	</button>
-
-	<button ion-button color="light" icon-end>
-		Next
-		<ion-icon name='arrow-forward'></ion-icon>
-	</button>
-	<button ion-button icon-start>
-		<ion-icon name='home'></ion-icon>
-		Home
-	</button>
-	<button ion-button outline icon-start>
-		<ion-icon name='briefcase' is-active="false"></ion-icon>
-		Work
-	</button>
-	<button ion-button clear icon-start>
-		<ion-icon name='beer' is-active="false"></ion-icon>
-		Pub
-	</button>
-	<button ion-button color="secondary" icon-start>
-		<ion-icon name='people'></ion-icon>
-		Friends
-	</button>
-	<button ion-button color="secondary" outline icon-start>
-		<ion-icon name='paw' is-active="false"></ion-icon>
-		Best Friend
-	</button>
-	<button ion-button color="danger" icon-start>
-		<ion-icon name='close'></ion-icon>
-		Remove
-	</button>
-	<button ion-button color="danger" outline icon-only>
-		<ion-icon name='remove-circle' is-active="false"></ion-icon>
-	</button>
-	<button ion-button color="danger" clear icon-only>
-		<ion-icon name='trash' is-active="false"></ion-icon>
-	</button>
-	<button ion-button color="dark" round icon-start>
-		<ion-icon name='construct' is-active="false"></ion-icon>
-		Tools
-	</button>
-	<button ion-button color="dark" clear icon-only>
-		<ion-icon name='hammer' is-active="false"></ion-icon>
-	</button>
 
 </ion-content>

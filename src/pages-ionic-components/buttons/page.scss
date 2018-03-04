@@ -1,19 +1,21 @@
-
-.buttons-page {
-
-  ion-card {
-    margin-bottom: 2em;
-  }
-
-  ion-card-content {
-    background-color: #F4F5F8;
-  }
-
-  ion-card img {
-    width: auto;
-    height: 44px;
-    display: block;
-    margin: 20px auto;
-  }
-
+.page-buttons {
+    ion-card {
+        margin-bottom: 2em;
+    }
+    ion-card-content {
+        background-color: #F4F5F8;
+    }
+    ion-card img {
+        width: auto;
+        height: 50px;
+        display: block;
+        margin: 10px auto;
+    }
+    ion-grid div {
+        background-color: #f0f5ff;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+    }
 }

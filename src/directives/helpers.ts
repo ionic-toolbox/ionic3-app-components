@@ -1,10 +1,8 @@
-// action sheets
 import { ActionSheetsPage }				from '../pages-ionic-components/action-sheets/page';
 import { AlertsPage }					from './../pages-ionic-components/alerts/page';
 import { BadgesPage }					from '../pages-ionic-components/badges/page';
-
-// buttons
-import { ButtonsPage } from '../pages-ionic-components/buttons/page';
+import { ButtonsPage }					from '../pages-ionic-components/buttons/page';
+import { GridsPage }					from '../pages-ionic-components/grids/page';
 
 // fabs
 import { BasicPage as FabBasicPage } from '../pages-ionic-components/fabs/basic/pages';
@@ -28,8 +26,6 @@ import { BasicPage as DatetimeBasicPage } from '../pages-ionic-components/dateti
 // gestures
 import { BasicPage as GestureBasicPage } from '../pages-ionic-components/gestures/basic/pages';
 
-// grid
-import { BasicPage as GridBasicPage } from '../pages-ionic-components/grid/basic/pages';
 
 // icons
 import { BasicPage as IconBasicPage } from '../pages-ionic-components/icons/basic/pages';
