@@ -1,11 +1,10 @@
-import { Injectable } from '@angular/core';
-import { ViewController, Content, Events } from 'ionic-angular';
+import { Injectable }					from '@angular/core';
+import { Content, Events }				from 'ionic-angular';
 
 import { SmartImage }					from '../smart-image/smart-image';
 
 @Injectable()
 export class SmartImageController {
-
 	smtImages: SmartImage[];
 	content: Content;
 

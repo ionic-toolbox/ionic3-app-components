@@ -29,16 +29,22 @@ export class PickerContainer {
 		public _viewCtrl: ViewController,
 		gestureCtrl: GestureController
 	) {
+		console.log('PickerContainer: constructor')
+
 		this._gestureBlocker = gestureCtrl.createBlocker({
 			disable: [GESTURE_MENU_SWIPE, GESTURE_GO_BACK_SWIPE]
 		});
 	}
 
 	ionViewPreLoad() {
+		console.log('PickerContainer: ionViewPreLoad')
+
 		this._load(this._navParams.data.component);
 	}
 
 	_load(component: any) {
+		console.log('PickerContainer: _load')
+
 		if (!component) return;
 
 		const componentFactory = this._cfr.resolveComponentFactory(component);

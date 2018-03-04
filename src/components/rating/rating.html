@@ -1,0 +1,9 @@
+<ion-grid no-padding no-margin class="ion-rating-container">
+	<ion-row class="star">
+		<ion-col text-center *ngFor="let star of stars; let i = index">
+			<button ion-button item-end outline icon-start (click)="itemSelected(star)">
+				<ion-icon name='star'></ion-icon>{{ star }}
+			</button>
+		</ion-col>
+	</ion-row>
+</ion-grid>
