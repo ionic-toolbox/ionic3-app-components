@@ -11,11 +11,18 @@
         display: block;
         margin: 10px auto;
     }
-    ion-grid div {
-        background-color: #f0f5ff;
-        border: 1px solid #000000;
-        border-radius: 2px;
-        padding: 5px;
-        text-align: center;
+    ion-row {
+        padding: 2px;
+    }
+    ion-col {
+        background-color: #fffff;
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+		padding: 5px;
+		margin: 2px;
+    }
+    p {
+        padding: 10px 0 0 10px !important;
+        margin: 0;
     }
 }

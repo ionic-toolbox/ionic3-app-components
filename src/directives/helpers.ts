@@ -166,7 +166,7 @@ export function getPages() {
 		'placeholder-labels': InputPlaceholderPage,
 		'stacked-labels': InputStackedPage,
 		'icons': IconBasicPage,
-		'grid': GridBasicPage,
+		'grid': GridsPage,
 		'lists': ListBasicPage,
 		'list-lines': ListBasicPage,
 		'list-no-lines': ListNoLinesPage,

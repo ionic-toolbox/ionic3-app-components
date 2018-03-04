@@ -4,7 +4,6 @@ import { ToastController }				from 'ionic-angular';
 
 
 @Component({
-	selector: 'page-buttons',
 	templateUrl: 'page.html'
 })
 export class ButtonsPage {
