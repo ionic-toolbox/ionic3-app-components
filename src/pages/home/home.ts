@@ -3,7 +3,6 @@ import { NavController }				from 'ionic-angular';
 
 import { SmartImagePage }				from '../smartimage-page/smartimage-page';
 import { AccordionPage }				from '../accordion/accordion';
-import { ContactPage }					from '../contact/contact';
 import { HideBottomBarOnScrollPage }	from '../hide-bottom-bar-on-scroll/hide-bottom-bar-on-scroll';
 import { LayoutsPage }					from '../layouts/layouts';
 import { LazyimgPage }					from '../lazyimg-page/lazyimg-page';
