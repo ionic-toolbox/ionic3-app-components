@@ -18,13 +18,10 @@
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
 
-<ion-fab left middle>
+<ion-fab right top>
 	<button ion-fab color="light" (click)="previousSection()">
 		<ion-icon name="arrow-back"></ion-icon>
 	</button>
-</ion-fab>
-
-<ion-fab right middle>
 	<button ion-fab color="light" (click)="nextSection()">
 		<ion-icon name="arrow-forward"></ion-icon>
 	</button>

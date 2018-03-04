@@ -10,6 +10,7 @@ import { SplashScreen }					from '@ionic-native/splash-screen';
 // Blocks
 import { HomePage }						from '../pages/home/home';
 import { TabsPage }						from '../pages/tabs/tabs';
+import { IonicComponentsPage }			from '../pages/ionic-components/ionic-components';
 
 import { ComponentsModule }				from '../components/components.module';
 
@@ -44,6 +45,9 @@ export class MainApp {
 		this.initializeApp();
 
 		this.pages = [
+			{ title: 'Home', component: HomePage },
+			{ title: 'Tabs', component: TabsPage },
+			{ title: 'Ionic Components', component: IonicComponentsPage },
 			{ title: 'Home', component: HomePage },
 		];
 	}
