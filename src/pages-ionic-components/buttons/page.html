@@ -10,6 +10,21 @@
 
 <ion-content padding class="page-buttons">
 	<ion-grid>
+		<ion-row *ngFor="let color of colors">
+			<ion-col col-1></ion-col>
+			<ion-col col-1>{{ color }}</ion-col>
+			<ion-col col-1>
+				<button ion-button color="{{ color }}" icon-only>
+					<ion-icon name='home'> </ion-icon>
+				</button>
+			</ion-col>
+			<ion-col col-2 *ngFor="let style of styles">{{ style }}
+				<button ion-button color="{{ color }}" (click)="itemTapped($event)">
+					<ion-icon name='arrow-back'></ion-icon>{{ color }}
+				</button>
+			</ion-col>
+		</ion-row>
+
 		<ion-row> 	<!-- Default -->
 			<ion-col col-2>
 				<h4>Default</h4>

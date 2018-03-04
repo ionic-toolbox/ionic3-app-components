@@ -8,6 +8,7 @@ import { ToastController }				from 'ionic-angular';
 })
 export class ButtonsPage {
 	colors = [ "light", "default", "secondary", "danger", "dark" ]
+	styles = [ "", "round", "outline", "clear" ]
 
 	constructor(public toastCtrl: ToastController){
 
